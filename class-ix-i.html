@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CLASS IX I</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: #005eff;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+.sosmed img {
+  width: 32px;
+  margin-left: 10px;
+  filter: brightness(0) invert(1);
+}
+
+nav {
+  background: #003e99;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li:hover {
+  background: #002b6d;
+}
+
+main {
+  padding: 2rem;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+  color: #005eff;
+}
+
+.content p, .content ul {
+  margin-bottom: 0.8rem;
+}
+
+.foto-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.foto-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.struktur-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #005eff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CLASS IX I</h1>
+ <!-- MENU SOSIAL MEDIA -->
+  <h2>Ikuti Kami di Sosial Media</h2>
+  <div style="display: flex; gap: 20px; align-items: center;">
+    <!-- TikTok -->
+    <a href="https://tiktok.com/@student.nine_i" target="_blank">
+      <img src="https://i.ibb.co/rGs0sx8X/Screenshot-2025-07-28-22-37-29-697-com-android-vending-edit.jpg" 
+           alt="Logo TikTok" 
+           style="width: 60px; height: 60px; border-radius: 15px;">
+    </a>
+    <!-- Instagram -->
+    <a href="https://instagram.com/class.ofnine_i" target="_blank">
+      <img src="https://i.ibb.co/933h2hjP/Screenshot-2025-07-31-00-38-50-399-com-android-vending-edit.jpg" 
+           alt="Logo Instagram" 
+           style="width: 60px; height: 60px; border-radius: 15px;">
+    </a>
+  </div>
+</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li onclick="show('beranda')">Beranda</li>
+      <li onclick="show('jadwal')">Jadwal</li>
+      <li onclick="show('piket')">Piket</li>
+      <li onclick="show('jumlah')">Jumlah Siswa</li>
+      <li onclick="show('foto')">Foto Murid</li>
+      <li onclick="show('wali')">Wali Kelas</li>
+      <li onclick="show('struktur')">Struktur Organisasi</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="beranda" class="content">
+      <h2>Selamat Datang di Kelas IX I</h2>
+      <p><strong>Ingat!</strong> Waktu tidak akan kembali. Gunakan masa sekolahmu untuk belajar, bukan hanya bermain.</p>
+      <p>Kamu mungkin bisa menyontek tugas, tapi kamu tidak bisa menyontek masa depan.</p>
+      <p>Jangan jadikan sekolah hanya tempat duduk dan ngobrol. Jadikan itu tempat kamu bertumbuh.</p>
+      <p>Kalau bukan sekarang kamu mulai rajin belajar, kapan lagi?</p>
+    </section>
+
+    <section id="jadwal" class="content" style="display:none">
+      <h2>Jadwal Pelajaran</h2>
+      <p>Sabtu - IPS (1jam), IPA (1jam), ILMU FALAK (1jam), SKI (1jam), B.INDONSIA (2jam), PRAKARYA (1jam), B.INGGRIS (2jam)</p>
+      
+      <p>Ahad - TAFSIR (1jam), M.HADITS (1jam), B.INGGRIS (1jam), IPS (1jam), AKIDAH A. (1jam), BALAGHOH (1jam), MATEMATIKA  (2jam), fiqsal (1jam)
+      
+      <p>Senin - NAHWU (2jam), TAUHID (1jam), ILMU MANTIQ (1jam), TA`LIM MUATA`ALIM (1jam), KE-NU-AN (1jam), SHOROF (1jam), B.JAWA(1jam), MATEMATIKA (1jam)</p>
+      
+      <p>SELASA - B.INGGRIS (1jam), B.ARAB (2jam), USHUL FIQIH (1jam), HADITS (1jam), B.INDONSIA (1jam), IPA (2jam)</p>
+      
+      <p>RABU - TAFSIR (1jam), MATEMATIKA(1jam), BIMB.WIRIDAN (1jam), PKN (2jam), QUR`AN HADITS (1jam), BALAGHOH (1jam), INFORMATIKA (1jam), IPA (1jam)</p>
+      
+      <p>KAMIS - PENJASORKES (2jam), BIMB.HAFALAN (1jam), ILMU FALAK (1jam), IPS (1jam), BIMB.SHOLAT (1jam), B.INDONSIA (1jam), BIMB.TAHLIL (1jam)</p>
+      
+      <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    </section>
+
+    <section id="piket" class="content" style="display:none">
+      <h2>Jadwal Piket</h2>
+      <ul>
+        <li>SABTU:NAZRIEL,IRFAN,ZIDNI ANNISATUZ,NATASYA </li>
+        
+        <li>AHAD:NIZAM, JAKA, FAHMI, DEVI, NAYLA A.</li>
+        
+        <li>SENIN:BRYANT,  AZZAM, İLHAM, CHUSNA, REVALINA</li>
+        
+        <li>SELASA:DHABIT, KHITAM, SUGENG, ELLENIA, SYARIFAH</li>
+        
+        <li>RABU:DIKY, ANGGUN, NAILA Z, TEVY, A`DOMI</li>
+        
+        <li>KAMIS:GILANG, RIFKI, ANJANI, LYLA, TSANIA</li>
+        
+      </ul>
+    </section>
+
+    <section id="jumlah" class="content" style="display:none">
+      <h2>Jumlah Siswa</h2>
+      <p>Total siswa: 30</p>
+      <ul>
+        <li>Laki-laki: 16</li>
+        <li>Perempuan: 14</li>
+      </ul>
+    </section>
+
+    <section id="foto" class="content" style="display:none">
+      <h2>Foto Murid</h2>
+      <div class="foto-container">
+        <a href="https://ibb.co/XZgQr0XW" target="_blank">
+          <img src="https://i.ibb.co/LzWFXjS0/murid1.jpg" alt="murid1" border="0">
+        </a>
+        <a href="https://ibb.co/WWt9kD5Y" target="_blank">
+          <img src="https://i.ibb.co/ynST6hPb/SAVE-20250728-221035.jpg" alt="murid2" border="0">
+        </a>
+        <a href="https://ibb.co/JwnBvbkq" target="_blank">
+          <img src="https://i.ibb.co/FL6x5f7X/SAVE-20250728-221029.jpg" alt="murid3" border="0">
+        </a>
+        <a href="https://ibb.co/PGnb5kYb" target="_blank">
+          <img src="https://i.ibb.co/pj8s3qPs/SAVE-20250728-221023.jpg" alt="murid4" border="0">
+        </a>
+      </div>
+    </section>
+
+<section id="wali" class="content" style="display:none">
+  <h2>Nama Wali Kelas</h2>
+  <p>Bp. Said Arifatul H., S.Pd</p>
+  <div class="foto-container">
+    <a href="https://ibb.co/MDcN0qDh" target="_blank">
+      <img src="https://i.ibb.co/fYk0wmYS/IMG-20250731-WA0060.jpg" alt="Wali Kelas" border="0">
+    </a>
+  </div>
+</section>
+
+    <section id="struktur" class="content" style="display:none">
+      <h2>Struktur Organisasi Kelas</h2>
+      <a href="https://ibb.co/TMD8z8Ls" target="_blank">
+        <img src="https://i.ibb.co/hFxWpWfS/struktur-kelas.jpg" alt="struktur-kelas" class="struktur-img" border="0">
+      </a>
+      <p>Struktur organisasi kelas tahun ajaran 2024/2025.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CLASS IX I</p>
+  </footer>
+
+  <script>
+    function show(id) {
+      document.querySelectorAll('.content').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
